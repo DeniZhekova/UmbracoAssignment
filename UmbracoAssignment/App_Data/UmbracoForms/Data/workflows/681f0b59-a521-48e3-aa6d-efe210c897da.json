@@ -1,0 +1,16 @@
+{
+  "id": "681f0b59-a521-48e3-aa6d-efe210c897da",
+  "name": "Send template email to deenchiii@gmail.com",
+  "form": "9982f9c2-46fd-43bd-b824-6945b7dcaa5c",
+  "active": true,
+  "workflowTypeId": "17c61629-d984-4e86-b43b-a8407b3efea9",
+  "executesOn": "Submitted",
+  "settings": {
+    "Email": "deenchiii@gmail.com",
+    "SenderEmail": "",
+    "Subject": "The Form '{form_name}' was submitted",
+    "RazorViewFilePath": "Forms/Emails/Example-Template.cshtml",
+    "Attachment": ""
+  },
+  "sortOrder": 1
+}
