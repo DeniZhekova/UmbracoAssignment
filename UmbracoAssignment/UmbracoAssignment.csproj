@@ -420,6 +420,10 @@
     <Content Include="App_Data\TEMP\TypesCache\umbraco-types.DENCHIII.hash" />
     <Content Include="App_Data\TEMP\TypesCache\umbraco-types.DENCHIII.list" />
     <Content Include="App_Data\umbraco.licensing.log.txt" />
+    <Content Include="App_Data\UmbracoAssignment.mdf" />
+    <Content Include="App_Data\UmbracoAssignment_log.ldf">
+      <DependentUpon>UmbracoAssignment.mdf</DependentUpon>
+    </Content>
     <Content Include="App_Data\UmbracoForms\Data\forms\9982f9c2-46fd-43bd-b824-6945b7dcaa5c.json" />
     <Content Include="App_Data\UmbracoForms\Data\forms\adf160f1-39f5-44c0-b01d-9e2da32bf093.json" />
     <Content Include="App_Data\UmbracoForms\Data\workflows\681f0b59-a521-48e3-aa6d-efe210c897da.json" />
