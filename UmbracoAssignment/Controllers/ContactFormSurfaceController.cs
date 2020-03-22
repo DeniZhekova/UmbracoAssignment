@@ -4,7 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Umbraco.Web.Mvc;
-using AarhusWebDevCoop.ViewModels;
+//using AarhusWebDevCoop.ViewModels;
+//using UmbracoAssignment.ViewModels;
 using System.Net.Mail;
 using Umbraco.Core;
 using Umbraco.Core.Models;
@@ -14,6 +15,7 @@ namespace UmbracoAssgnment.Controllers
 {
     public class ContactFormSurfaceController : SurfaceController
     {
+        /*
         // GET: ContactFormSurface
         public ActionResult Index()
         {
@@ -61,6 +63,7 @@ namespace UmbracoAssgnment.Controllers
             Services.ContentService.Save(msg);
 
             return RedirectToCurrentUmbracoPage();
-        }
+        }*/
     }
-}
+
+    }
