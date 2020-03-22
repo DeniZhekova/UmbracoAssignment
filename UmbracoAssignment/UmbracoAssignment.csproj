@@ -455,6 +455,7 @@
     <Content Include="obj\Debug\UmbracoAssignment.csproj.FileListAbsolute.txt" />
     <Content Include="obj\Debug\UmbracoAssignment.dll" />
     <Content Include="obj\Debug\UmbracoAssignment.pdb" />
+    <Content Include="project.txt" />
     <Content Include="scripts\umbraco-starterkit-app.js" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -477,6 +478,7 @@
     <Compile Include="App_Data\Models\Product.generated.cs" />
     <Compile Include="App_Data\Models\Products.generated.cs" />
     <Compile Include="App_Data\Models\Sitemap.generated.cs" />
+    <Compile Include="Controllers\ContactFormSurfaceController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
