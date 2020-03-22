@@ -1,15 +1,34 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
 @using Umbraco.Web;
-@{ 
-    var site = Model.Root();
-    var selection = site.Children.Where(x => x.IsVisible());
+@*
+    @{
+        var site = Model.Root();
+        var selection = site.Children.Where(x => x.IsVisible());
+    }
+
+    <!-- uncomment this line if you don't want it to appear in the top navigation -->
+    <a class="nav-link @Html.Raw(Model.Id == site.Id ? "navi-link--active" : "")" href="@site.Url">@site.Name</a>
+
+    @foreach (var item in selection)
+    {
+        <a class="nav-link @(item.IsAncestorOrSelf(Model) ? "nav-link--active" : null)" href="@item.Url">@item.Name</a>
+    }
+*@
+
+
+@{
+    var root = Model.Root();
+    var selection = root.Children.Where(x => x.IsVisible()).ToArray();
 }
 
-<!-- uncomment this line if you don't want it to appear in the top navigation -->
-<a class="nav-link @Html.Raw(Model.Id == site.Id ? "navi-link--active" : "")" href="@site.Url">@site.Name</a>
-
-@foreach (var item in selection)
+@if (selection.Length > 0)
 {
-    <a class="nav-link @(item.IsAncestorOrSelf(Model) ? "nav-link--active" : null)" href="@item.Url">@item.Name</a>
+    <a class="nav-link @(Model.Name==root.Name?"nav-link--active":null)" href="@root.Url">@root.Name</a>
+
+    foreach (var item in selection)
+    {
+            <a class="nav-link @(item.IsAncestorOrSelf(Model)?"nav-link--active":null)" href="@item.Url">@item.Name</a>
+    }
 }
+
 
