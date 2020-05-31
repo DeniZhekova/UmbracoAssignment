@@ -15,7 +15,7 @@ namespace UmbracoAssgnment.Controllers
 {
     public class ContactFormSurfaceController : SurfaceController
     {
-        /*
+        
         // GET: ContactFormSurface
         public ActionResult Index()
         {
@@ -63,7 +63,7 @@ namespace UmbracoAssgnment.Controllers
             Services.ContentService.Save(msg);
 
             return RedirectToCurrentUmbracoPage();
-        }*/
+        }
     }
 
     }
